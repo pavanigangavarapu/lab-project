@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admission Form</title>
+<style>
+form {
+    display: grid;
+    gap: 10px;
+    max-width: 300px;
+    margin: auto;
+}
+@media(max-width:600px) {
+    form { width: 90%; }
+}
+</style>
+</head>
+<body>
+
+<h2>Admission Form</h2>
+
+<form>
+<label>Name:</label>
+<input type="text" required>
+
+<label>Email:</label>
+<input type="email" required>
+
+<label>Phone:</label>
+<input type="tel" required>
+
+<label>Course:</label>
+<select>
+<option>CSE</option>
+<option>ECE</option>
+<option>IT</option>
+</select>
+
+<button type="button"
+onclick="alert('Form Submitted!')">Submit</button>
+</form>
+
+</body>
+</html>
